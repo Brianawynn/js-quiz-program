@@ -32,7 +32,7 @@ if (ans5.toUpperCase() === 'BEZOAR'){
  correct = correct +1;
 }
 
-
+console.log(correct);
 
 // output results
 if (correct<= 2){
