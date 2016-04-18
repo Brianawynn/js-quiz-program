@@ -58,7 +58,8 @@ document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked+ " CORRECT. I S
 }
 if (correct > 2 && correct <= 4){
  document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. I THINK YOUR CAT KNOWLEDGE COULD USE A LITTLE MORE WORK! YOU RECIEVE A SILVER MEDAL!</p>");
+}
 if (correct >4){
   document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. YOU ARE A MASTER IN CAT KNOWLDEGE! YOU RECIEVE A GOLD MEDAL</p>");
  }
-}
+
