@@ -25,7 +25,7 @@ function question(questionText, realAnswer){
   correct += 1;
 }
 
-question();
+question("WHAT DO YOU CALL A GROUP OF CATS?", "CLOWDER");
 // // if statement
 // if ( ans1.toUpperCase() === 'CLOWDER' ) {
 //  correct = correct+ 1;
@@ -46,7 +46,7 @@ question();
 //console.log(correct);
 
 // output results
-if (correct<= 2 || correct = 0){
+if (correct<= 2){
 
 document.write("<p>YOU GOT " + correct + " OUT OF 5 CORRECT. I SUGGEST WORKING ON YOUR KNOWLEDGE!YOU RECIEVE A BRONZE MEDAL. </p> ");
 }
