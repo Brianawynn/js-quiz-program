@@ -62,5 +62,5 @@ if (correct > 2 && correct <= 4){
 }
 else {
   document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. YOU ARE A MASTER IN CAT KNOWLDEGE! YOU RECIEVE A GOLD MEDAL</p>");
- }
+ 
 
