@@ -25,6 +25,7 @@ function question(){
   correct += 1;
 }
 
+question();
 // // if statement
 // if ( ans1.toUpperCase() === 'CLOWDER' ) {
 //  correct = correct+ 1;
