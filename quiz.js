@@ -3,6 +3,7 @@ document.write("<h2> Test your knowledge about the best species on earth here!</
 document.write("<h2> Become the next master in cat knowledge!</h2> <p> This is for a limited time only, enjoy!</p>");
 // variables
 var correct = 0;
+var totalAsked = 0;
 
 // prompt
 // var ans1 = prompt("What do you call a group of cats?");
@@ -21,11 +22,16 @@ var correct = 0;
 function question(questionText, realAnswer){
  //what our function will do 
   var ansInput = prompt(questionText);
+  totalAsked+=1;
    if ( ansInput.toUpperCase() === realAnswer ) {
   correct += 1;
 }
 
 question("WHAT DO YOU CALL A GROUP OF CATS?", "CLOWDER");
+question("How many muscles control a cat's ears?", "TWENTY");
+question("Which state has elected a cat for mayor of one of its cities?", "ALASKA");
+
+
 // // if statement
 // if ( ans1.toUpperCase() === 'CLOWDER' ) {
 //  correct = correct+ 1;
@@ -48,11 +54,11 @@ question("WHAT DO YOU CALL A GROUP OF CATS?", "CLOWDER");
 // output results
 if (correct<= 2){
 
-document.write("<p>YOU GOT " + correct + " OUT OF 5 CORRECT. I SUGGEST WORKING ON YOUR KNOWLEDGE!YOU RECIEVE A BRONZE MEDAL. </p> ");
+document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked+ " CORRECT. I SUGGEST WORKING ON YOUR KNOWLEDGE!YOU RECIEVE A BRONZE MEDAL. </p> ");
 }
 else if (correct > 2 && correct <= 4){
- document.write("<p>YOU GOT " + correct + " OUT OF 5 CORRECT. I THINK YOUR CAT KNOWLEDGE COULD USE A LITTLE MORE WORK! YOU RECIEVE A SILVER MEDAL!</p>");
+ document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. I THINK YOUR CAT KNOWLEDGE COULD USE A LITTLE MORE WORK! YOU RECIEVE A SILVER MEDAL!</p>");
  else if (correct >4){
-  document.write("<p>YOU GOT " + correct + " OUT OF 5 CORRECT. YOU ARE A MASTER IN CAT KNOWLDEGE! YOU RECIEVE A GOLD MEDAL</p>");
+  document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. YOU ARE A MASTER IN CAT KNOWLDEGE! YOU RECIEVE A GOLD MEDAL</p>");
  }
 }
