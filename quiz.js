@@ -30,7 +30,8 @@ function question(questionText, realAnswer){
 question("WHAT DO YOU CALL A GROUP OF CATS?", "CLOWDER");
 question("How many muscles control a cat's ears?", "TWENTY");
 question("Which state has elected a cat for mayor of one of its cities?", "ALASKA");
-
+question("What flavor can cats NOT taste?", "SWEETNESS");
+question("What is the technical term for a hairball?", "BEZOAR");
 
 // // if statement
 // if ( ans1.toUpperCase() === 'CLOWDER' ) {
@@ -59,7 +60,7 @@ document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked+ " CORRECT. I S
 if (correct > 2 && correct <= 4){
  document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. I THINK YOUR CAT KNOWLEDGE COULD USE A LITTLE MORE WORK! YOU RECIEVE A SILVER MEDAL!</p>");
 }
-if (correct >4){
+else {
   document.write("<p>YOU GOT " + correct + " OUT OF " + totalAsked + " CORRECT. YOU ARE A MASTER IN CAT KNOWLDEGE! YOU RECIEVE A GOLD MEDAL</p>");
  }
 
