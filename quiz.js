@@ -18,10 +18,10 @@ var correct = 0;
 
 //rewrite the above code in a function to simplify it.
 
-function question(){
+function question(questionText, realAnswer){
  //what our function will do 
-  var ansInput = prompt("What do you call a group of cats?");
-   if ( ansInput.toUpperCase() === 'CLOWDER' ) {
+  var ansInput = prompt(questionText);
+   if ( ansInput.toUpperCase() === realAnswer ) {
   correct += 1;
 }
 
