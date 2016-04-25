@@ -7,21 +7,21 @@ var totalAsked = 0;
 var myItems = ["question one ", "question two"];
 
 prompt
-var ans1 = prompt("What do you call a group of cats?");
-document.write("<p>The question was: What do you call a group of cats?  You responded: " + ans1 + " The correct answer was CLOWDER</p>");
-var ans2 = prompt("How many muscles control a cat's ears?")
-document.write("<p>The question was: How many muscles control a cat's ears?  You responded: " + ans2 + " The correct answer was TWENTY</p>");
-var ans3 = prompt("Which state has elected a cat for mayor of one of its cities?")
-document.write("<p>The question was: Which state has elected a cat for mayor of one of its cities?  You responded: " + ans3 + " The correct answer was Alaska</p>");
-var ans4 = prompt("What flavor can cats NOT taste?")
-document.write("<p>The question was: What flavor can cats NOT taste?  You responded: " + ans4 + " The correct answer was SWEETNESS</p>");
-var ans5 = prompt("What is the technical term for a hairball?")
-document.write("<p>The question was: What is the technical term for a hairball?  You responded: " + ans5 +" The correct answer was BEZOAR</p>");
+// var ans1 = prompt("What do you call a group of cats?");
+// document.write("<p>The question was: What do you call a group of cats?  You responded: " + ans1 + " The correct answer was CLOWDER</p>");
+// var ans2 = prompt("How many muscles control a cat's ears?")
+// document.write("<p>The question was: How many muscles control a cat's ears?  You responded: " + ans2 + " The correct answer was TWENTY</p>");
+// var ans3 = prompt("Which state has elected a cat for mayor of one of its cities?")
+// document.write("<p>The question was: Which state has elected a cat for mayor of one of its cities?  You responded: " + ans3 + " The correct answer was Alaska</p>");
+// var ans4 = prompt("What flavor can cats NOT taste?")
+// document.write("<p>The question was: What flavor can cats NOT taste?  You responded: " + ans4 + " The correct answer was SWEETNESS</p>");
+// var ans5 = prompt("What is the technical term for a hairball?")
+// document.write("<p>The question was: What is the technical term for a hairball?  You responded: " + ans5 +" The correct answer was BEZOAR</p>");
 
 var secondList ="<ul>";
 
 while ( i < myItems.length){
- secondList += "<li>" + myItems + "</li>";
+ secondList += "<li>" + myItems[i] + "</li>";
  i++;
 }
 secondList += "</ul>";
