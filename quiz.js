@@ -4,6 +4,7 @@ document.write("<h2> Become the next master in cat knowledge!</h2> <p> This is f
 // variables
 var correct = 0;
 var totalAsked = 0;
+var myItems = ["question one ", "question two"];
 
 prompt
 var ans1 = prompt("What do you call a group of cats?");
@@ -16,6 +17,15 @@ var ans4 = prompt("What flavor can cats NOT taste?")
 document.write("<p>The question was: What flavor can cats NOT taste?  You responded: " + ans4 + " The correct answer was SWEETNESS</p>");
 var ans5 = prompt("What is the technical term for a hairball?")
 document.write("<p>The question was: What is the technical term for a hairball?  You responded: " + ans5 +" The correct answer was BEZOAR</p>");
+
+var secondList ="<ul>";
+
+while ( i < myItems.length){
+ secondList += "<li>" + myItems + "</li>";
+ i++;
+}
+secondList += "</ul>";
+ document.write(secondList);
 
 //rewrite the above code in a function to simplify it.
 
